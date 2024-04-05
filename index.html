@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="reset.css" rel="reset">
+    <link href="style.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/logo.png" alt="mylogo">
+        <h1>Bienvenido a mi encriptador de texto</h1>
+    </header>
+    <main class="main">
+        <section class="primerCampo">
+            <textarea type="text" id="textoEncript" class="campoTexto"
+            placeholder="Ingresa el texto a encriptar" oninput="soloMinusculas(event)"></textarea>
+            <div class="botones">
+                <button class="btnEncriptar" onclick="pressEncrypt()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="pressDecrypt()">Desencriptar</button>
+                <button class="btnCopiar" onclick="pressCopiar()">Copiar</button>
+                <button class="btnLimpiar" onclick="pressClear()">Limpiar</button>
+            </div>
+        </section>
+        <section class="segundoCampo">
+            <textarea type="text" id="campoMnsj" class="mensaje" readonly></textarea>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+            <p>Proyecto de encriptador de texto. 2024</p>
+            <p>Code by Andre Lara</p>
+            <a target="_blank" class="socialMedia"><img src="/img/dev.png" alt="Andre Lara" title="André Lara"></a>
+            <a target="_blank" class="socialMedia" href="https://github.com/iDrewx"><img src="/img/github.png" alt="GitHub" title="GitHub"></a>
+            <a target="_blank" class="socialMedia" href="https://www.linkedin.com/in/andre-lara-it/"><img src="/img/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
+    </footer>
+</body>
+</html>
