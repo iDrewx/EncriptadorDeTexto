@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="/src/reset.css" rel="reset">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body class="bg-[#f4f4f4] text-[#333] leading-[1.6]">
+    <header class=" text-white text-center px-0 py-4 animate-fade-in-down animate-delay-400">
+        <!--<img class="w-60 block mx-auto my-0" src="/img/logo.png" alt="mylogo">-->
+
+     <div class="flex flex-col items-center gap-4">
+
+        <div class="relative my-4 ">
+            <div class="absolute -inset-2">
+                <div
+                    class="w-60 h-full max-w-sm mx-auto lg:mx-0">
+                </div>
+            </div>
+            <img src="/img/logo.png"
+                class="relative object-cover shrink-0 h-21 w-60 z-10 rounded-xl " title="logo" >
+        </div>
+    </div>
+
+        <!--<h1 class="block font-sans text-5xl antialiased font-semibold leading-tight tracking-normal text-inherit">Bienvenido a mi encriptador de texto</h1>-->
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl p-6">
+            <span class="block">
+                Bienvenido
+                <span class="text-transparent bg-clip-text bg-gradient-to-tr to-cyan-500 from-blue-600">
+                    a mi encriptador
+                </span>
+                de texto
+            </span>
+        </h1>
+
+    </header>
+    <main class="max-w-[800px] mx-auto my-5 p-5 animate-fade-in-down animate-delay-800">
+        <section class="primerCampo">
+            <textarea type="text" id="textoEncript" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 mb-6"
+            placeholder="Ingresa el texto a encriptar" oninput="soloMinusculas(event)"></textarea>
+            <div class="flex justify-center gap-7">
+                <button class="inline-block w-auto text-center min-w-[170px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px" onclick="pressEncrypt()">Encriptar</button>
+                <button class="inline-block w-auto text-center min-w-[170px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px" onclick="pressDecrypt()">Desencriptar</button>
+                <button class="inline-block w-auto text-center min-w-[170px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px" onclick="pressCopiar()">Copiar</button>
+                <button class="inline-block w-auto text-center min-w-[170px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px" onclick="pressClear()">Limpiar</button>
+               
+                
+
+            </div>
+        </section>
+        <section class="segundoCampo">
+            <textarea title="area" type="text" id="campoMnsj" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 mt-6" readonly></textarea>
+        </section>
+
+        
+
+    </main>
+    <script src="/script.js"></script>
+    <footer class=" text-white text-center px-0 py-4 animate-fade-in-down animate-delay-1000">
+                <p>Proyecto de encriptador de texto. 2024</p>
+                <p>Code by Andre Lara</p>
+            <div class="w-full my-0 flex justify-center items-center mt-5 gap-7">
+                <a target="_blank" rel="noopener" ><img src="/img/dev.png" alt="Andre Lara" title="André Lara"></a>
+                <a target="_blank" rel="noopener" href="https://github.com/iDrewx"><img src="/img/github.png" alt="GitHub" title="GitHub"></a>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/andre-lara-it/"><img src="/img/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
+            </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
